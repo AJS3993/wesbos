@@ -6,14 +6,23 @@ import Inventory from './components/Inventory/Inventory';
 
 class App extends React.Component {
   render(){
-  return (
-    <div className="App">
-      <div className='menu'>
-        <Header/>
+    return (
+      
+      <div className="App">
+        
+        <div className='menu'>
+          <Header tagline='Mouth Watering'/>
+        </div>
+        
+        <div className='Order'>
+          <Order />
+        </div>
+        
+        <div className='Inventory'>
+          <Inventory />
+        </div>
+      
       </div>
-      <Order />
-      <Inventory />
-    </div>
     )
   }
 }

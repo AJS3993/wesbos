@@ -9,7 +9,7 @@ class Header extends React.Component {
                     <h1>World Famous Bar-B-Que</h1>
                 </header>
                 <h3 className='tagline'>
-                    <span>Mouth Watering</span>
+                    <span>{this.props.tagline}</span>
                 </h3>
             </>
         )
