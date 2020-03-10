@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
-import StorePicker from './components/StorePicker'
+import Header from './components/Header';
 
-function App() {
+class App extends React.Component {
+  render(){
   return (
     <div className="App">
-      <StorePicker/>
+      <Header/>
     </div>
-  );
+    )
+  }
 }
 
 export default App;
