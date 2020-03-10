@@ -1,4 +1,5 @@
 import React from 'react';
+import './StorePicker.css';
 
 class StorePicker extends React.Component {
     
