@@ -3,18 +3,24 @@ import './StorePicker.css';
 
 class StorePicker extends React.Component {
 
-    handleClick(){
-        alert('heyyyyyyyyyy')
+    goToStore(event) {
+        
+        //1. stop form from submitting
+        event.preventDefault();
+
+        //2. get text from input
+
+
+        //3.change page to /store/whatever-they-entered
+
     }
     
     render(){
         return (
             <>
-                <form className='formy'>
+                <form className='formy' onSubmit={this.goToStore}>
                   
                   <h2>Enter a store</h2>
-
-                  <button onClick={this.handleClick}>THE BUTTON :0</button>
                   
                   <input type='text' required placeholder='store name'></input>
                   
