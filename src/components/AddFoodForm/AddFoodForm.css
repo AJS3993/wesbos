@@ -11,3 +11,17 @@
   width: 100%;
   border: 1px solid #000;
 }
+
+input,
+textarea,
+select {
+  width: 33.33%;
+  padding: 10px;
+  line-height: 1;
+  font-size: 1.2rem;
+  border: 0;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  border-radius: 0;
+  background: #fff;
+}
