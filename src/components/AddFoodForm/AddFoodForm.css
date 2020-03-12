@@ -1,0 +1,13 @@
+.foodEdit {
+    margin-bottom: 20px;
+    border: 2px solid #000;
+    overflow: hidden;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foodEdit button {
+  width: 100%;
+  border: 1px solid #000;
+}
