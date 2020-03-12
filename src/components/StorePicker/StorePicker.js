@@ -2,19 +2,26 @@ import React from 'react';
 import './StorePicker.css';
 
 class StorePicker extends React.Component {
+    
 
-    goToStore(event) {
+    myInput = React.createRef()
+
+   
+    goToStore = event => {
         
         //1. stop form from submitting
         event.preventDefault();
 
         //2. get text from input
-
+        console.log(this.myInput.value.value)
 
         //3.change page to /store/whatever-they-entered
+        this.props.push(`/store/${this.myInput}`)
 
     }
     
+
+
     render(){
         return (
             <>
@@ -22,7 +29,7 @@ class StorePicker extends React.Component {
                   
                   <h2>Enter a store</h2>
                   
-                  <input type='text' required placeholder='store name'></input>
+                  <input type='text' ref={this.myInput} required placeholder='store name'></input>
                   
                   <button type='submit'>Visit Store</button>
                 

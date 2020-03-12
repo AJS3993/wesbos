@@ -1,11 +1,13 @@
 import React from 'react';
+import AddFoodForm from '../AddFoodForm/AddFoodForm';
 import './Inventory.css';
 
 class Inventory extends React.Component {
     render(){
         return (
             <>
-                <p>Inventory</p>
+                <h2>Inventory</h2>
+                <AddFoodForm/>
             </>
         )
     }
