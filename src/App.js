@@ -5,6 +5,12 @@ import Order from './components/Order/Order';
 import Inventory from './components/Inventory/Inventory';
 
 class App extends React.Component {
+  
+  state = {
+    food: {},
+    order: {}
+  }
+  
   render(){
     return (
       
