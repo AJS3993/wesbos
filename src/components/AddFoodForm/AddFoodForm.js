@@ -21,6 +21,7 @@ class AddFoodForm extends React.Component {
         };
     
         this.props.addFood(food);
+        //reset form
         e.currentTarget.reset();
     };
 
