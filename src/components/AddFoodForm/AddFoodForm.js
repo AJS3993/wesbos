@@ -11,8 +11,15 @@ class AddFoodForm extends React.Component {
     
     createFood = e => {
         e.preventDefault();
-        console.log(this.nameRef.current.value)
-    }
+        
+        const fish = {
+            
+        }
+    
+        this.Props.addFish(fish)
+    };
+
+  
     
     render(){
         return (

@@ -10,6 +10,10 @@ class App extends React.Component {
     food: {},
     order: {}
   }
+
+  addFish = (fish) => {
+    console.log('addFish')
+  }
   
   render(){
     return (
@@ -25,7 +29,7 @@ class App extends React.Component {
         </div>
         
         <div className='Inventory'>
-          <Inventory />
+          <Inventory addFish={this.addFish}/>
         </div>
       
       </div>
