@@ -7,7 +7,7 @@ class Inventory extends React.Component {
         return (
             <>
                 <h2>Inventory</h2>
-                <AddFoodForm addFish={this.props.addFish}/>
+                <AddFoodForm addFood={this.props.addFood}/>
             </>
         )
     }

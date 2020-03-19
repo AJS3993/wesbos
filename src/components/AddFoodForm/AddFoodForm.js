@@ -12,7 +12,7 @@ class AddFoodForm extends React.Component {
     createFood = e => {
         e.preventDefault();
         
-        const fish = {
+        const food = {
             name: this.nameRef.current.value,
             price: parseFloat(this.priceRef.current.value),
             status: this.statusRef.current.value,
@@ -20,7 +20,7 @@ class AddFoodForm extends React.Component {
             image: this.imageRef.current.value
         };
     
-        this.props.addFish(fish);
+        this.props.addFood(food);
         e.currentTarget.reset();
     };
 
