@@ -20,7 +20,7 @@ class AddFoodForm extends React.Component {
             image: this.imageRef.current.value
         };
     
-        this.Props.addFish(fish);
+        this.props.addFish(fish);
         e.currentTarget.reset();
     };
 
