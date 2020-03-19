@@ -11,8 +11,15 @@ class App extends React.Component {
     order: {}
   }
 
-  addFood = (fish) => {
-    console.log('addFood')
+  addFood = dish => {
+    //1. Take a copy of the existing state in a variable
+    const food = {...this.state.food}
+
+    //2. Add new food to that variable
+    food[`dish${Date.now()}`] = dish
+
+    //3. Set new food object to state
+    this.setState({food: food})
   }
   
   render(){
