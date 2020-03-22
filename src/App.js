@@ -21,6 +21,10 @@ class App extends React.Component {
     //3. Set new food object to state
     this.setState({food: food})
   }
+
+  loadSamples = () => {
+    alert('load sample');
+  }
   
   render(){
     return (
@@ -36,7 +40,7 @@ class App extends React.Component {
         </div>
         
         <div className='Inventory'>
-          <Inventory addFood={this.addFood}/>
+          <Inventory addFood={this.addFood} loadSamples={this.loadSamples}/>
         </div>
       
       </div>
