@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Order from './components/Order/Order';
 import Inventory from './components/Inventory/Inventory';
+import dishes from './sample-food';
 
 class App extends React.Component {
   
@@ -23,7 +24,7 @@ class App extends React.Component {
   }
 
   loadSamples = () => {
-    alert('load sample');
+    this.setState({food: dishes});
   }
   
   render(){
