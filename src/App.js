@@ -34,6 +34,9 @@ class App extends React.Component {
         
         <div className='menu'>
           <Header tagline='Mouth Watering'/>
+          <ul className='dishes'>
+
+          </ul>
         </div>
         
         <div className='Order'>
