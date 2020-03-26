@@ -1,18 +1,18 @@
 const dishes = {
     dish1: {
-      name: "Hamburger",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/RedDot_Burger.jpg/1200px-RedDot_Burger.jpg",
+      name: "Lobster",
+      image: "https://raw.githubusercontent.com/wesbos/React-For-Beginners-Starter-Files/master/stepped-solutions/Finished%20App/public/images/lobster.jpg",
       desc:
         "Everyone’s favorite",
-      price: 1724,
+      price: 14.99,
       status: "available"
     },
     dish2: {
       name: "Chgeeseburger",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/RedDot_Burger.jpg/1200px-RedDot_Burger.jpg",
+      image: "https://i.pinimg.com/originals/12/6c/00/126c00315061c37544409c60931d6bdb.jpg",
       desc:
         "Everyone’s second favorite",
-      price: 1924,
+      price: 8.00,
       status: "available"
     }
   };
