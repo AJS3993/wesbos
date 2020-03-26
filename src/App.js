@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Order from './components/Order/Order';
 import Inventory from './components/Inventory/Inventory';
 import dishes from './sample-food';
+import Dish from './components/Dish/Dish';
 
 class App extends React.Component {
   
@@ -35,7 +36,7 @@ class App extends React.Component {
         <div className='menu'>
           <Header tagline='Mouth Watering'/>
           <ul className='dishes'>
-
+              <Dish/>
           </ul>
         </div>
         
