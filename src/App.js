@@ -32,7 +32,7 @@ class App extends React.Component {
     //1.take a copy of state
     const order = {...this.state.order};
     //2.add to order or update order number
-    order.dish[key] = order.dish[key] + 1 || 1;
+    order[key] = order[key] + 1 || 1;
     //3.call setState to update state
     this.setState({order});
   }

@@ -2,6 +2,11 @@ import React from 'react';
 
 
 class Dish extends React.Component {
+    
+    handleClick = () => {
+        this.props.addToOrder(this.props.index)
+    }
+    
     render(){
 
         const {image, name, price, desc, status} = this.props.details
@@ -15,7 +20,9 @@ class Dish extends React.Component {
                 <span className='price'>{price}</span>
                 </h3>
                 <p>{desc}</p>
-                <button disabled={!isAvailable}>{isAvailable ? 'Add to cart' : 'Sold Out'}</button>
+                <button disabled={!isAvailable} onClick={this.handleClick}>
+                    {isAvailable ? 'Add to cart' : 'Sold Out'}
+                    </button>
             </li>
         )
     }
