@@ -8,7 +8,7 @@ const dishes = {
       status: "available"
     },
     dish2: {
-      name: "Chgeeseburger",
+      name: "Cheeseburger",
       image: "https://i.pinimg.com/originals/12/6c/00/126c00315061c37544409c60931d6bdb.jpg",
       desc:
         "Everyone’s second favorite",

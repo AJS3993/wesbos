@@ -17,7 +17,7 @@ class Dish extends React.Component {
         return (
             <li className='menu-dish'>
                 <img src={image} alt='hi'/>
-                <h3 className='dish-name'>{name}
+                <h3 className='dish-name'>{name}<br/>
                 <span className='price'>{formatPrice(price)}</span>
                 </h3>
                 <p>{desc}</p>
