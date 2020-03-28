@@ -10,12 +10,12 @@ class Dish extends React.Component {
 
         return (
             <li className='menu-dish'>
-                <img src={image}/>
+                <img src={image} alt='hi'/>
                 <h3 className='dish-name'>{name}
                 <span className='price'>{price}</span>
                 </h3>
                 <p>{desc}</p>
-                <button disabled={!isAvailable}>Add to cart</button>
+                <button disabled={!isAvailable}>{isAvailable ? 'Add to cart' : 'Sold Out'}</button>
             </li>
         )
     }
