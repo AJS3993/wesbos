@@ -6,6 +6,8 @@ class Dish extends React.Component {
 
         const {image, name, price, desc, status} = this.props.details
 
+        const isAvailable = status === 'available';
+
         return (
             <li className='menu-dish'>
                 <img src={image}/>
@@ -13,7 +15,7 @@ class Dish extends React.Component {
                 <span className='price'>{price}</span>
                 </h3>
                 <p>{desc}</p>
-                <button>Add to cart</button>
+                <button disabled={!isAvailable}>Add to cart</button>
             </li>
         )
     }
