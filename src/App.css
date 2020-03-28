@@ -29,3 +29,7 @@ h1, h2 {
     margin-top: 0;
     margin-bottom: 2rem;
   }
+
+ul {
+    list-style-type: none;
+}
