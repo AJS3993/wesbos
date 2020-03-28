@@ -6,7 +6,11 @@ class Order extends React.Component {
     renderOrder = key => {
         const dish = this.props.food[key];
         const count = this.props.order[key];
-        return( <li>
+        const isAvailable = dish.status === 'available';
+        if(!isAvailable) { return (
+            <li key={key}>Sorry, this item is no longer available</li>
+         ) }
+        return( <li key={key}>
             {count} {dish.name}
             {formatPrice(count * dish.price)}
         </li>
@@ -30,7 +34,7 @@ class Order extends React.Component {
         return (
             <div className='order-wrap'>
                 <h2>Order</h2>
-                <ul>
+                <ul className='order'>
                     {orderIds.map(this.renderOrder)}
                 </ul>
                 <div className='total'>
