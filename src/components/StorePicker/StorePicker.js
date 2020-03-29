@@ -1,4 +1,6 @@
 import React from 'react';
+// import PropTypes from "prop-types";
+import { getFunName } from '../../helpers';
 import './StorePicker.css';
 
 class StorePicker extends React.Component {
@@ -25,7 +27,7 @@ class StorePicker extends React.Component {
                   
                   <h2>Enter a store</h2>
                   
-                  <input type='text' ref={this.myInput} required placeholder='store name'></input>
+                  <input type='text' ref={this.myInput} required placeholder='store name' defaultValue={getFunName()}/>
                   
                   <button type='submit'>Visit Store</button>
                 

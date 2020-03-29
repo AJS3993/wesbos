@@ -6,11 +6,16 @@ import Inventory from './components/Inventory/Inventory';
 import dishes from './sample-food';
 import Dish from './components/Dish/Dish';
 
+
 class App extends React.Component {
   
   state = {
     food: {},
     order: {}
+  }
+
+  componentDidUpdate(){
+    localStorage.setItem(this.props.match.params.storeId, this.state.order)
   }
 
   addFood = dish => {
