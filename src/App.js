@@ -5,6 +5,7 @@ import Order from './components/Order/Order';
 import Inventory from './components/Inventory/Inventory';
 import dishes from './sample-food';
 import Dish from './components/Dish/Dish';
+import base from './base';
 
 
 class App extends React.Component {
@@ -14,8 +15,16 @@ class App extends React.Component {
     order: {}
   }
 
-  componentDidUpdate(){
-    localStorage.setItem(this.props.match.params.storeId, this.state.order)
+  componentDidMount() {
+    const { params } = this.props.match;
+    this.ref = base.syncState(`${params.storeId}/food`, {
+      context: this,
+      state: "food"
+    });
+  }
+
+  componentWillUnmount() {
+    base.removeBinding(this.ref);
   }
 
   addFood = dish => {
