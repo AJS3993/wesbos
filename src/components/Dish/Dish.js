@@ -1,4 +1,5 @@
 import React from 'react';
+import './Dish.css';
 import {formatPrice} from '../../helpers.js'
 
 

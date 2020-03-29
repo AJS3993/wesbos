@@ -1,6 +1,6 @@
 .App {
     display: grid;
-    grid-column: 1 / 3;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .menu {
