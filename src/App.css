@@ -1,27 +1,31 @@
 .App {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    border-width:8px;  
+    border-style:double;
 }
 
 .menu {
     grid-column-start: 1;
     grid-column-end: 1;
-    height: 100vh;
-    border: 1px solid black;
+    min-height: 100vh;
+    border-right: 2px solid black;
+    border-width:8px;  
+    border-style:double;
 }
 
 .Order {
     grid-column-start: 2;
     grid-column-end: 2;
     height: 100vh;
-    border: 1px solid black;
 }
 
 .Inventory {
     grid-column-start: 3;
     grid-column-end: 3;
-    height: 100vh;
-    border: 1px solid black;
+    min-height: 100vh;
+    border-width:8px;  
+    border-style:double;
 }
 
 h1, h2 {
