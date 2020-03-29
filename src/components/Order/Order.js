@@ -6,7 +6,10 @@ class Order extends React.Component {
     renderOrder = key => {
         const dish = this.props.food[key];
         const count = this.props.order[key];
-        const isAvailable = dish.status === 'available';
+        const isAvailable = dish && dish.status === 'available';
+        
+        if (!dish) return null;
+        
         if(!isAvailable) { return (
             <li key={key}>Sorry, this item is no longer available</li>
          ) }
