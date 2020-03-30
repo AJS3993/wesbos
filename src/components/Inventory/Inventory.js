@@ -1,5 +1,6 @@
 import React from 'react';
 import AddFoodForm from '../AddFoodForm/AddFoodForm';
+import EditFoodForm from '../EditFoodForm/EditFoodForm';
 import './Inventory.css';
 
 class Inventory extends React.Component {

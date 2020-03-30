@@ -87,7 +87,7 @@ class App extends React.Component {
         </div>
         
         <div className='Inventory'>
-          <Inventory addFood={this.addFood} loadSamples={this.loadSamples}/>
+          <Inventory addFood={this.addFood} loadSamples={this.loadSamples} food={this.state.food}/>
         </div>
       
       </div>
