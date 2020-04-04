@@ -1,4 +1,5 @@
 import React from 'react';
+import './EditFoodForm.css'
 
 class EditFoodForm extends React.Component {
     render(){
