@@ -1,5 +1,5 @@
 .foodEdit {
-    margin-bottom: 20px;
+    margin: 20px;
     border: 2px solid #000;
     overflow: hidden;
     display: -webkit-box;
@@ -10,18 +10,27 @@
 .foodEdit button {
   width: 100%;
   border: 1px solid #000;
+  font-size: 20px;
+  background-color: rgb(161, 218, 161);
 }
 
 input,
-textarea,
 select {
-  width: 33.33%;
+  margin: 5px;
   padding: 10px;
   line-height: 1;
   font-size: 1.2rem;
-  border: 0;
-  border-bottom: 1px solid #000;
-  border-right: 1px solid #000;
-  border-radius: 0;
-  background: #fff;
+  border: 1px solid #000;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #000;
+  margin: 5px;
+}
+
+.inputImage {
+  width: 100%;
+  border: 1px solid #000;
+  margin: 5px;
 }

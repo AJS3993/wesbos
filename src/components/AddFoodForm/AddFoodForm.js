@@ -34,13 +34,14 @@ class AddFoodForm extends React.Component {
                 <input name='name' ref={this.nameRef} type='text' placeholder='name'/>
                 <input name='price' ref={this.priceRef} type='text' placeholder='price in cents'/>
                 
+                <p>Currently Available?</p>
                 <select name='status' ref={this.statusRef} type='text' placeholder='status'>
-                    <option value='available'>Fresh!</option>
-                    <option value='unavailable'>Sold Out</option>
+                    <option value='available'>Yes</option>
+                    <option value='unavailable'>No</option>
                 </select>
                 
                 <textarea name='desc' ref={this.descRef} type='text' placeholder='desc'/>
-                <input name='image' ref={this.imageRef} type='text' placeholder='image'/>
+                <input name='image' className='inputImage' ref={this.imageRef} type='text' placeholder='image'/>
                 <button type='submit'>Add</button>
             
             </form>

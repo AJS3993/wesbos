@@ -20,7 +20,7 @@ const dishes = {
       image: "https://img.texasmonthly.com/2018/01/Black-Board-Bar-B-Q-2.jpg?auto=compress&crop=faces&fit=crop&fm=pjpg&h=150&ixlib=php-1.2.1&q=45&w=150&wpsize=thumbnail",
       desc:
         "Rubbed with our secret brisket rub then slow smoked 12-14 hours over hardwood oak and apple woods to a very tender and flavorful experience. Served stand alone, as a sandwich or in our famous meat combos, this juicy brisket is an explosion of flavor. Add the sauce of your choice tableside.",
-      price: 900,
+      price: 999,
       status: "available"
     }
   };

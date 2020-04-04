@@ -19,12 +19,13 @@ class EditFoodForm extends React.Component {
             <div className='EditFood'>
                 <input type='text' name='name' onChange={this.handleChange} value={this.props.food.name}/>
                 <input type='text' name='price' onChange={this.handleChange} value={this.props.food.price}/>
+                <p>Currently Available?</p>
                 <select type='text' name='status' onChange={this.handleChange} value={this.props.food.status}>
-                    <option value='available'>Fresh!</option>
-                    <option value='unavailable'>Sold Out</option>
+                    <option value='available'>Yes</option>
+                    <option value='unavailable'>No</option>
                 </select>
-                <input type='text' name='desc' onChange={this.handleChange} value={this.props.food.desc}/>
-                <input type='text' name='image' onChange={this.handleChange} value={this.props.food.image}/>
+                <textarea name='desc' onChange={this.handleChange} value={this.props.food.desc}/>
+                <input type='text' name='image' className='inputImage' onChange={this.handleChange} value={this.props.food.image}/>
                 <button onClick={() => this.props.deleteFood(this.props.index)}>
                 Remove
                 </button>
