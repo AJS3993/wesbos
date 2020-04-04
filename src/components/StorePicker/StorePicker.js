@@ -25,7 +25,7 @@ class StorePicker extends React.Component {
             <>
                 <form className='formy' onSubmit={this.goToStore}>
                   
-                  <h2>Enter a store</h2>
+                  <h1>Enter a store</h1>
                   
                   <input type='text' ref={this.myInput} required placeholder='store name' defaultValue={getFunName()}/>
                   

@@ -1,0 +1,15 @@
+.formy h1 {
+    font-family: Lucida;
+    padding-top: 30px;
+}
+
+.formy {
+    text-align: center;
+}
+
+.formy button{
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: rgb(188, 189, 189);
+}
