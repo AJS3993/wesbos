@@ -32,7 +32,7 @@ class AddFoodForm extends React.Component {
             <form className='foodEdit' onSubmit={this.createFood}>
                 
                 <input name='name' ref={this.nameRef} type='text' placeholder='name'/>
-                <input name='price' ref={this.priceRef} type='text' placeholder='price'/>
+                <input name='price' ref={this.priceRef} type='text' placeholder='price in cents'/>
                 
                 <select name='status' ref={this.statusRef} type='text' placeholder='status'>
                     <option value='available'>Fresh!</option>
