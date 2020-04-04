@@ -52,6 +52,15 @@ class App extends React.Component {
     this.setState({food: food})
   }
 
+  updateFood = (key, updatedFood) => {
+    // 1. Take a copy of the current state
+    const food = { ...this.state.food };
+    // 2. Update that state
+    food[key] = updatedFood;
+    // 3. Set that to state
+    this.setState({ food });
+  };
+
   loadSamples = () => {
     this.setState({food: dishes});
   }
@@ -87,7 +96,7 @@ class App extends React.Component {
         </div>
         
         <div className='Inventory'>
-          <Inventory addFood={this.addFood} loadSamples={this.loadSamples} food={this.state.food}/>
+          <Inventory addFood={this.addFood} updateFood={this.updateFood} loadSamples={this.loadSamples} food={this.state.food}/>
         </div>
       
       </div>

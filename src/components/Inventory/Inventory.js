@@ -13,7 +13,7 @@ class Inventory extends React.Component {
                     key={key}
                     index={key}
                     food={this.props.food[key]}
-                    updateFood={this.props.updateFish}
+                    updateFood={this.props.updateFood}
                 />
                 ))}
                 
