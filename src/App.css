@@ -9,22 +9,24 @@
     grid-column-start: 1;
     grid-column-end: 1;
     min-height: 100vh;
-    border-right: 2px solid black;
-    border-width:8px;  
+    border-width:4px;  
     border-style: double;
 }
 
 .Order {
     grid-column-start: 2;
     grid-column-end: 2;
-    height: 100vh;
+    border-top-width: 4px;
+    border-top-style: double;
+    border-bottom-width: 4px;
+    border-bottom-style: double;
 }
 
 .Inventory {
     grid-column-start: 3;
     grid-column-end: 3;
     min-height: 100vh;
-    border-width:8px;  
+    border-width:4px;  
     border-style:double;
 }
 

@@ -5,13 +5,14 @@
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
+    /* background-color: rgb(221, 221, 220); */
 }
 
 .EditFood button {
   width: 100%;
   border: 1px solid #000;
   font-size: 20px;
-  background-color: rgb(218, 161, 161);
+  /* background-color: rgb(218, 161, 161); */
 }
 
 input,
@@ -33,4 +34,8 @@ textarea {
   width: 100%;
   border: 1px solid #000;
   margin: 5px;
+}
+
+p {
+  margin: 10px;
 }

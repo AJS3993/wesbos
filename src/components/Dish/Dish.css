@@ -1,6 +1,16 @@
 .menu-dish{
-border-top: 2px solid black;
-border-bottom: 2px solid black;
-margin: 2px;
-padding: 10px;
+    
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 2px;
+    padding: 10px;
+}
+
+
+
+img {
+    border: 2px solid black;
+    float: left;
+  width: 150px;
+  margin-right: 1rem;
 }
