@@ -1,3 +1,9 @@
 .tagline{
     text-align: center;
+    font-family: Jazz LET, fantasy;
 }
+
+h1 {
+    font-family: Jazz LET, fantasy;
+    margin: 5px;
+  }
