@@ -61,6 +61,12 @@ class App extends React.Component {
     this.setState({ food });
   };
 
+  deleteFood = key => {
+    const food = { ...this.state.food }
+    food[key] = null
+    this.setState({ food });
+  }
+
   loadSamples = () => {
     this.setState({food: dishes});
   }
@@ -96,7 +102,7 @@ class App extends React.Component {
         </div>
         
         <div className='Inventory'>
-          <Inventory addFood={this.addFood} updateFood={this.updateFood} loadSamples={this.loadSamples} food={this.state.food}/>
+          <Inventory addFood={this.addFood} updateFood={this.updateFood} deleteFood={this.deleteFood} loadSamples={this.loadSamples} food={this.state.food}/>
         </div>
       
       </div>
