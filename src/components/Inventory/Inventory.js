@@ -12,8 +12,8 @@ class Inventory extends React.Component {
                 <EditFoodForm
                     key={key}
                     index={key}
-                    fish={this.props.food[key]}
-                    updateFish={this.props.updateFish}
+                    food={this.props.food[key]}
+                    updateFood={this.props.updateFish}
                 />
                 ))}
                 
