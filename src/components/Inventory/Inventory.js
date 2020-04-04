@@ -19,7 +19,7 @@ class Inventory extends React.Component {
                 ))}
                 
                 <AddFoodForm addFood={this.props.addFood}/>
-                <button onClick={this.props.loadSamples}>Load Samples</button>
+                <button className='loadSamplesButton' onClick={this.props.loadSamples}>Load Samples</button>
             </>
         )
     }
