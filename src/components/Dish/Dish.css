@@ -11,6 +11,12 @@
 img {
     border: 2px solid black;
     float: left;
-  width: 150px;
-  margin-right: 1rem;
+    width: 150px;
+    margin-right: 1rem;
+}
+
+.addToCart{
+    width: 100%;
+    border: 1px solid #000;
+    font-size: 20px;
 }

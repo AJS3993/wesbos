@@ -26,7 +26,7 @@ class Dish extends React.Component {
 
                 <p>{desc}</p>
                 
-                <button disabled={!isAvailable} onClick={this.handleClick}>
+                <button className='addToCart' disabled={!isAvailable} onClick={this.handleClick}>
                     {isAvailable ? 'Add to cart' : 'Sold Out'}
                     </button>
             </li>

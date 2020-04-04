@@ -10,7 +10,7 @@
 
 .EditFood button {
   width: 100%;
-  border: 1px solid #000;
+  border-top: 1px solid #000;
   font-size: 20px;
   /* background-color: rgb(218, 161, 161); */
 }

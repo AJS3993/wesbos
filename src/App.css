@@ -39,3 +39,7 @@ h1, h2 {
 ul {
     list-style-type: none;
 }
+
+button:hover{
+    background-color: rgb(215, 215, 215);
+}
