@@ -34,8 +34,17 @@ textarea {
   width: 100%;
   border: 1px solid #000;
   margin: 5px;
+  font-size: 10px;
 }
 
 p {
   margin: 10px;
 }
+
+.Availability {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #000;
+  margin: 5px;
+}
+

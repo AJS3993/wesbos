@@ -17,13 +17,17 @@ class EditFoodForm extends React.Component {
     render(){
         return (
             <div className='EditFood'>
-                <input type='text' name='name' onChange={this.handleChange} value={this.props.food.name}/>
-                <input type='text' name='price' onChange={this.handleChange} value={this.props.food.price}/>
+                <input className='EditName' type='text' name='name' onChange={this.handleChange} value={this.props.food.name}/>
+                <input className='EditPrice' type='text' name='price' onChange={this.handleChange} value={this.props.food.price}/>
+                
+                <div className='Availability'>
                 <p>Currently Available?</p>
                 <select type='text' name='status' onChange={this.handleChange} value={this.props.food.status}>
                     <option value='available'>Yes</option>
                     <option value='unavailable'>No</option>
                 </select>
+                </div>
+                
                 <textarea name='desc' onChange={this.handleChange} value={this.props.food.desc}/>
                 <input type='text' name='image' className='inputImage' onChange={this.handleChange} value={this.props.food.image}/>
                 <button onClick={() => this.props.deleteFood(this.props.index)}>
