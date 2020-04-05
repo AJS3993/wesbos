@@ -17,15 +17,21 @@ class EditFoodForm extends React.Component {
     render(){
         return (
             <div className='EditFood'>
+                
+                <div className='Row1'>
                 <input className='EditName' type='text' name='name' onChange={this.handleChange} value={this.props.food.name}/>
                 <input className='EditPrice' type='text' name='price' onChange={this.handleChange} value={this.props.food.price}/>
-                
+                </div>
+
                 <div className='Availability'>
                 <p>Currently Available?</p>
+                
+
                 <select type='text' name='status' onChange={this.handleChange} value={this.props.food.status}>
                     <option value='available'>Yes</option>
                     <option value='unavailable'>No</option>
                 </select>
+              
                 </div>
                 
                 <textarea name='desc' onChange={this.handleChange} value={this.props.food.desc}/>

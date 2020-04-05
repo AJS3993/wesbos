@@ -31,8 +31,8 @@ class AddFoodForm extends React.Component {
         return (
             <form className='foodEdit' onSubmit={this.createFood}>
                 
-                <input name='name' ref={this.nameRef} type='text' placeholder='name'/>
-                <input name='price' ref={this.priceRef} type='text' placeholder='price in cents'/>
+                <input className='AddName' name='name' ref={this.nameRef} type='text' placeholder='name'/>
+                <input className='AddPrice' name='price' ref={this.priceRef} type='text' placeholder='price in cents'/>
                 <div className='Availability'>
                 <p>Currently Available?</p>
                 <select name='status' ref={this.statusRef} type='text' placeholder='status'>
