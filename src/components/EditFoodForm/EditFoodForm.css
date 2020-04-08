@@ -49,13 +49,16 @@ p {
   width: 100%;
 }
 
+.Row1{
+  display: flex;
+  flex-direction: row;
+}
+
 .EditName {
-  width: 42%;
-  float: left;
+  width: 40%;
 }
 
 .EditPrice {
-  width: 42%;
-  float: right;
+  width: 40%;
 }
 

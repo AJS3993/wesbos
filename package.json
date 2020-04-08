@@ -14,10 +14,12 @@
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
-    "react-transition-group": "^4.3.0"
+    "react-transition-group": "^4.3.0",
+    "serve": "^11.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
+    "now": "serve --single ./build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

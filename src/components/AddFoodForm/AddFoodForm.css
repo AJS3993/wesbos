@@ -26,7 +26,6 @@ select {
 
 textarea {
   width: 100%;
-  height: 25%;
   border: 1px solid #000;
   margin: 5px;
 }
@@ -48,12 +47,15 @@ p {
   margin: 5px;
 }
 
+.RowA{
+  display: flex;
+  flex-direction: row;
+}
+
 .AddName {
-  width: 42%;
-  float: left;
+  width: 50%;
 }
 
 .AddPrice {
-  width: 42%;
-  float: right;
+  width: 50%;
 }
